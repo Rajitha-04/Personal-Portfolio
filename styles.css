@@ -1,0 +1,282 @@
+/* style.css */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fdfdfd; color: #333; line-height: 1.6; }
+a { text-decoration: none; color: inherit; }
+
+/* Header */
+header { background: #2d3e50; color: #fff; padding: 0.5rem 1rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+header h1 { font-size: 1.5rem; font-family:Great Vibes;}
+nav a { margin-left: 1.5rem; font-weight: 500; transition: color 0.3s; }
+nav a:hover { color: #ff9800; }
+
+/{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f4f6fa; /* lighter professional tone */
+  color: #333;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.hero .tagline {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #2d3e50;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #1e3564;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.social-links a {
+  color: #333;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  color: #0077b5; /* LinkedIn Blue */
+  transform:scale(1.2);
+}
+.social-links img{
+  filter:grayscale(100%);
+  transition:transform 0.3s ease-in-out,filter 0.4s;
+  width:28px;
+  height:28px;
+}
+.social-links img:hover{
+  transform: scale(1.2);
+  filter:none;
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: center;
+  background: #2d3e50;
+  margin-top: 40px;
+}
+
+.stat-box {
+  flex: 1;
+  margin: 0 25px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.stat-box h2 {
+  font-size: 2rem;
+  color: #2a4d8f;
+  margin-bottom: 10px;
+}
+
+.stat-box p {
+  font-size: 1rem;
+  color: #555;
+}
+/* Overview */
+.overview { display: flex; justify-content: space-around; text-align: center; gap: 1.5rem; flex-wrap: wrap; }
+.highlight { background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); flex: 1; min-width: 220px; }
+.highlight h3 { margin-bottom: 1rem; }
+
+/* About */
+section { padding: 4rem 2rem; max-width: 1100px; margin: auto; }
+h2.section-title { text-align: center; margin-bottom: 2rem; font-size: 2rem; color: #2d3e50; }
+.about { display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; }
+.about img { flex: 1 1 250px; border-radius: 10px; max-width: 300px; }
+.about-text { flex: 2 1 400px; text-align:left;}
+ul {
+  list-style-type: disc;
+  padding: 0;
+  margin: 0;
+  gap: 10px; /* adjust the value as needed */
+  display: flex;
+  flex-direction: column;
+}
+/* Skills */
+..skills-section {
+  background: #fff;
+  padding: 60px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.skills-section h2 {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.skills-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.skills-track {
+  display: flex;
+  gap: 20px; /* 👈 This creates the gap between cards */
+  width: max-content;
+  animation: scroll-left 25s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.skill-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+  width: 160px;
+  margin: 0; /* no margin needed now */
+  flex: 0 0 auto;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.skill-card h4 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  margin: 10px 0 4px;
+}
+
+.level-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #777;
+}
+
+/* Experience */
+.experience .exp-item { background: #fff; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.experience h3 { margin-bottom: 0.5rem; }
+.experience p { font-style: italic; margin-bottom: 0.5rem; }
+.experience ul { list-style: disc; padding-left: 1.5rem; text-align:left;}
+
+/* Projects */
+.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+.project { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s; }
+.project img { width: 100%; height: 200px; object-fit: cover; }
+.project-content { padding: 1rem; }
+.project h3 { margin-bottom: 0.5rem; }
+.project p { font-size: 0.9rem; margin-bottom: 1rem; }
+.project a { color: #ff9800; font-weight: bold; }
+.project:hover { transform: translateY(-5px); }
+
+/* Contact */
+/* Contact Section */
+#contact {
+  padding: 60px 20px;
+  background: #f9f9f9; /* lighter background for readability */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2d3e50;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2d3e50;
+}
+
+/* Button group layout */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Buttons */
+.btn {
+  flex: 1; /* equal size */
+  padding: 0.9rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background: #2d3e50;
+  color:#fff;
+  transition: background 0.3s ease;
+}
+.btn:hover{
+  background: #1e2d3d;
+}
+/* Footer */
+footer { background: #2d3e50; color: #fff; text-align: center; padding: 1.5rem; margin-top: 3rem; }
