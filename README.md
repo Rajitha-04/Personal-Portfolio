@@ -22,6 +22,3 @@ It is built with *HTML, CSS, and JavaScript* and fully responsive for desktop an
 - *Version Control:* Git & GitHub  
 
 ---
-
-## 📸 Preview
-Portfolio Preview
